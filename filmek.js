@@ -14,6 +14,8 @@ Add.addEventListener("click", function(){
     AccImage.style.display="block";
     AccImage.style.margin="0 auto"
     
+    // AccImage.classList.add()
+
     const div = document.createElement("div");
     div.className="card";
     div.style.float="left";
