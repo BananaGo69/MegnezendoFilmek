@@ -8,6 +8,12 @@ Add.addEventListener("click", function(){
     const Tit = Title.value.trim();
     const Gen = Genre.options[Genre.selectedIndex].text;
     const Img = Pic.value.trim();
+
+    if (Tit == "" || Img == "") {
+        alert("Oops! Valami hiba van!");
+        return;
+    }
+
     const AccImage = document.createElement("img");
     AccImage.src=Img;
     AccImage.style.width="70%";
