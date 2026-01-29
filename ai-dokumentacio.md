@@ -32,3 +32,4 @@
 }
 
 Újra megtanultam a kártyákkal kapcsolatos dolgokat, és ezt beépítettem a CSS-be 1/1.
+

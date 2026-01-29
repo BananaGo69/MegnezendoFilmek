@@ -32,6 +32,7 @@ Add.addEventListener("click", function(){
     h3.style.textAlign="center";
     const p = document.createElement("p");
     p.innerText=Gen;
+    p.style.textAlign="center";
     const del = document.createElement("button");
     del.innerText="Törlés";
     del.style.display="block";
@@ -47,3 +48,4 @@ Add.addEventListener("click", function(){
          FinalDiv.removeChild(div);
     })
 })
+
