@@ -2,7 +2,7 @@ const Title = document.getElementById("title");
 const Genre = document.getElementById("mufaja");
 const Pic = document.getElementById("kepurl");
 const Add = document.getElementById("add");
-const AddDiv = document.getElementById("card");
+const FinalDiv = document.getElementById("card");
 
 
 Add.addEventListener("click", function(){
@@ -13,22 +13,26 @@ Add.addEventListener("click", function(){
     // AccImage.href=Img;
     
     const div = document.createElement("div");
+    div.className="card";
+    div.style.float="left";
+    
     const h4 = document.createElement("h4");
     h4.innerText=Tit;
     const p = document.createElement("p");
     p.innerText=Gen;
     const del = document.createElement("button");
+    del.innerText="Törlés";
 
     
     
     div.append(h4);
     div.append(p);
     // AddDiv.append(AccImage);
-    AddDiv.append(div);
-    AddDiv.append(del);
-    // del.addEventListener("click", function(){
-         //AddDiv.remove();
-    // })
+    div.append(del);
+    FinalDiv.append(div);
+    del.addEventListener("click", function(){
+         FinalDiv.removeChild(div);
+    })
 })
 
 //  <div class="card">
