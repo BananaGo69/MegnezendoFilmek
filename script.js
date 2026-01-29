@@ -8,16 +8,22 @@ Add.addEventListener("click", function(){
     const Tit = Title.value.trim();
     const Gen = Genre.options[Genre.selectedIndex].text;
     const Img = Pic.value.trim();
+
+    if (Tit == "" || Img == "") {
+        alert("Oops! Valami hiba van!");
+        return;
+    }
+
     const AccImage = document.createElement("img");
     AccImage.src=Img;
     AccImage.style.width="70%";
     AccImage.style.display="block";
     AccImage.style.margin="0 auto"
     
-    // AccImage.classList.add()
+    
 
     const div = document.createElement("div");
-    div.className="card";
+    div.classList="card";
     div.style.float="left";
     div.style.boxShadow="0 8px 16px 0 black"
     
@@ -41,11 +47,3 @@ Add.addEventListener("click", function(){
          FinalDiv.removeChild(div);
     })
 })
-
-//  <div class="card">
-//   <img src="img_avatar.png" alt="Avatar" style="width:100%">
-//   <div class="container">
-//     <h4><b>John Doe</b></h4>
-//     <p>Architect & Engineer</p>
-//   </div>
-// </div> 
