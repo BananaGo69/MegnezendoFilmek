@@ -36,3 +36,9 @@
 .kartya button:hover {
     background-color: #ff1a1a;
 }
+
+body {
+    background-color: #776bb3;
+    margin: 0;
+    padding: 0;
+}
